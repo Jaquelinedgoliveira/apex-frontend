@@ -1,0 +1,32 @@
+form{
+    width:500px;
+    height:100px;
+    text-align: center;
+    margin: 200px auto;
+    padding: 50px; 
+    /* /margin-left: 30%; */
+    border: solid 10px rgb(36, 85, 3);
+    background-color: rgb(102, 240, 11);
+}
+
+input[type="text"]{
+    width:  150px;
+    margin: 10px;
+    padding: 5px;
+    border: solid 5px rgb(233, 163, 13) ;
+    background-color: rgb(36, 85, 3);
+    color: white;
+     
+}
+input[type="button"]{
+    width:  120px;
+    margin: 5px;
+    padding: 5px;
+    border: solid 5px rgb(233, 163, 13) ;
+    background-color: rgb(36, 85, 3);
+    color: white;
+}
+body{
+    background-color: rgb(135, 240, 135);
+}
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agência de Viagens</title>
+
+    <!-- Css Global -->
+    <link rel="stylesheet" href="css/global.css">
+
+    <!-- Media Queries -->
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 575px)">
+    <link rel="stylesheet" href="css/tablet.css" media="(min-width: 576px) and (max-width: 1024px">
+    <link rel="stylesheet" href="css/pc.css" media="(min-width: 1025px)">
+    
+    <!-- fotorama -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    
+    <script src="Js/menu.js"></script>
+
+
+
+</head>
+
+<body>
+    <!-- Topo -->
+    <header>
+        <h1>Agência de Viagens</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="empresa.html">A Empresa</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+        <select name="menu" onchange="irPara()">
+            <option value="2">A Empresa</option>
+            <option value="1">Início</option>
+            <option value="3">Contato</option>
+        </select>
+    </header>
+
+    <!-- Banner -->
+    <section class="fotorama" data-width="100%">
+        <img src="imagens/praia1.jpg">
+
+    </section>
+    <!-- Conteúdo principal -->
+    <main>
+
+        A Empresa..
+    </main>
+    <!-- Rodapé -->
+    <footer>
+        <p>Feito na Apex | 2019</p>
+        <div>
+            <img src="imagens/facebook.png">
+            <img src="imagens/instagram.png">
+            <img src="imagens/youtube.png">
+            <img src="imagens/twitter.png">
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

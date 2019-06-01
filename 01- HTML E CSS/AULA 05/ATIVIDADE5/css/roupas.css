@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(99, 230, 240);
+}
+.card{
+    display: inline-block;
+    border: solid black 2px;
+    background-color: burlywood;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+   
+
+p{
+    color: rgb(83, 16, 67);
+    font-size: 18px;
+}

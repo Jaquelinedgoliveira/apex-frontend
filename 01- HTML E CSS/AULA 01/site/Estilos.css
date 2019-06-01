@@ -1,0 +1,85 @@
+/* Padronizar tags */
+*{
+    font: 14px sans-serif;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+
+/* Cabeçalho */
+header{
+    background-color: #000;
+    overflow: auto;
+}
+header a{
+    color: #fff;
+    text-decoration: none;
+    padding: 20px; 
+    display: inline-block; /*podemos trabalhar as margens inferior e superior, somente o block alinha abaixo*/ 
+    transition: background-color 0.5s, color 0.5s;
+    
+}
+
+header a:hover{ /* efeito de mouse*/
+ background-color: #e8e8e8;
+ color: #000;
+}
+
+header nav{
+    float: left;
+}
+header form{
+    float: right;
+    margin-top: 15px;
+}
+header input[type="text"]{
+border-radius: 10px 0px 0px 10px;
+padding: 5px;
+border: none;
+width: 250px;
+}
+
+header input[type="submit"]{
+    padding: 5px;
+    border:none;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 15px;
+    width: 80px;
+    color: #fff;
+    background: linear-gradient(45deg, #8fc400 0%,#8fc400 100%); 
+}
+/* Atuação */
+#atuacao{
+    width: 990px;
+    margin: auto;
+    margin-top: 30px;
+   
+}
+#atuacao figure{
+    display: inline-block;
+    width: 327px;
+    text-align: center;
+}
+#atuacao figcaption{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+footer{
+    background-color: #000;
+    padding: 10px;
+    color: #fff;
+    margin-top: 50px;
+    overflow: auto;
+}
+
+footer p{
+    float: left;
+    margin-top: 10px;
+    }
+
+    footer img{
+        float: right;
+        width: 30px;
+        margin-left: 10px;
+    }

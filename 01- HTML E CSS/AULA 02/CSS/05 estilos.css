@@ -1,0 +1,25 @@
+form{
+    width:350px;
+    text-align: center;
+    margin: 50px auto;
+    padding: 50px; 
+    /* /margin-left: 30%; */
+    border: solid 2px rgb(233, 13, 97);
+    background-color: rgb(198, 231, 10);
+}
+input[type="text"]{
+    width:  200px;
+    margin: 5px;
+    padding: 5px;
+    border: solid 2px rgb(233, 13, 97) ;
+       
+}
+input[type="button"]{
+    margin: 5px;
+    padding: 5px;
+    border: solid 2px rgb(63, 8, 42);
+    background-color: rgb(211, 8, 133);
+}
+body{
+    background: linear-gradient(45deg, rgba(254,187,187,1) 0%,rgba(254,144,144,1) 45%,rgba(255,92,92,1) 100%);
+}

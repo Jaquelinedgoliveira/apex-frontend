@@ -1,0 +1,23 @@
+form{
+    width:300px;
+    margin: 50px auto;
+    /* /margin-left: 30%; */
+    border: solid 2px black;
+    background-color: aqua;
+}
+input[type="text"]{
+    width: 280px;
+    margin: 5px;
+    padding: 3px;
+    border: solid 2px rgb(8, 63, 40) ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+label{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{
+    background-color: darkcyan;
+}
+
+
+  

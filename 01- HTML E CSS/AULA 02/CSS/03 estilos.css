@@ -1,0 +1,28 @@
+form{
+    width: 400px;
+    margin: 50px auto;
+    /* /margin-left: 30%; */
+    border: solid 3px rgb(8, 63, 40);
+    background-color: burlywood;
+}
+input[type="button"]{
+    margin: 5px;
+    padding: 5px;
+    border: solid 2px rgb(8, 63, 40);
+    background-color: rgb(224, 150, 53);
+}
+input[type="text"]{
+    width: 380px;
+    margin: 5px;
+    padding: 3px;
+    border: solid 2px rgb(8, 63, 40) ;
+}
+body{
+    background-color: rgb(240, 160, 69);
+}
+img{
+    width: 200px;
+}
+figure{
+    text-align: center;
+}

@@ -1,0 +1,38 @@
+*{
+    outline-color: rgb(41, 2, 20);
+}
+
+form{
+    width:500px;
+    text-align: center;
+    margin: 200px auto;
+    padding: 30px; 
+    /* /margin-left: 30%; */
+    border: solid 5px rgb(41, 2, 20);
+    background-color: rgb(201, 171, 162);
+    }
+    H2{
+        color: rgb(41, 2, 20)
+        
+    }
+    input[type="button"]{
+        width:  150px;
+        margin: 10px;
+        padding: 5px;
+        border: solid 5px rgb(201, 171, 162);
+        background-color: rgb(41, 2, 20);
+        color:white;
+        border-radius: 10px;
+
+    }
+    input[type="text"]{
+        width:  70px;
+        margin: 10px;
+        padding: 5px;
+        border: solid 2px rgb(41, 2, 20);
+        color: black;
+        border-radius: 5px;
+    }
+    body{
+        background-color: darkgray;
+    }      

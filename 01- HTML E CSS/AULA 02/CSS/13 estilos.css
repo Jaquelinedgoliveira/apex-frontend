@@ -1,0 +1,29 @@
+form {
+    width: 200px;
+    text-align: center;
+    margin: 200px auto;
+    padding: 30px;
+    /* /margin-left: 30%; */
+    border: double 8px rgb(5, 51, 53);
+    background-color: rgb(21, 214, 198);
+}
+input[type="text"]{
+    width:  150px;
+    margin: 10px;
+    padding: 5px;
+    border: solid 5px rgb(5, 51, 53);
+    background-color: rgb(177, 236, 231);
+    color: black;
+    }
+    body{
+        background-color: burlywood;
+    }
+    input[type="button"]{
+       width: 100px;
+       margin: 5px;
+       padding: 5px;
+       border: solid 5px rgb(5, 51, 53);
+       background-color: rgb(66, 102, 99); 
+       color: white;
+    }
+    
