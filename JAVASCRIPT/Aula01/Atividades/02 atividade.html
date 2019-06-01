@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade 02</title>
+
+    <link href="css/02 estilos.css" rel="stylesheet">
+    <script>
+        function calcular() {
+            var valor = parseFloat(document.getElementsByTagName("input")[0].value);
+            var resultado = valor-(valor*0.1);
+
+            window.alert("Valor do produto: "+resultado);
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>SISTEMAS DE DESCONTOS AULA 02<b></b></h1>
+    </header>
+    <form>
+        <input type="text" placeholder="Valor do produto">
+        <input type="button" value="enviar" onclick=calcular()>
+    </form>
+    <div>
+        <!-- <img src="imagem/cidade01.jpg"> -->
+    </div>
+
+
+</body>
+
+</html>

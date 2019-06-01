@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <title>06 ao Carregar</title>
+<!-- CSS -->
+<style>
+
+.popUp{
+width: 500px;
+box-shadow: 0px 0px 10px black;
+margin: 20% auto;
+padding: 100px 10px; 
+display: none;
+
+}
+</style>
+
+<!-- JS -->
+
+<script>
+function popUp(){
+
+    var verificarPopUp = localStorage.getItem("msg");
+    
+    if(verificarPopUp == null){
+        document.getElementsByClassName("popUp")[0].style.display="block";
+        localStorage.setItem("msg", true);
+    }
+
+  
+}
+</script>
+
+</head>
+
+<body onload="popUp()"> <!--onload só usado no body para aparecer o popUp-->
+
+<div class="popUp">Seja bem vindo ao meu site!</div>
+
+<button onclick="localStorage.clear(); alert('local Storage limpo')"> Limpar LocalStorage</button>
+    
+</body>
+</html>

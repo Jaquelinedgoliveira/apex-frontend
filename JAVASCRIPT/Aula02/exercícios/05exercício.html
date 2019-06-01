@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05 exercício</title>
+</head>
+<body>
+    <script>
+     var valor= parseFloat(prompt("Informe o valor a ser investido"));
+     var tempo= parseInt(prompt("Informe quantos meses você quer inverstir"));
+         
+        
+     for(var i=1;i<=tempo; i++){
+        valor = valor+(valor*0.0037);
+
+        document.write(i+"º mês- R$"+valor.toFixed(2));
+        document.write("<hr>");
+
+    }
+
+
+
+
+    </script>
+
+
+</body>
+</html>

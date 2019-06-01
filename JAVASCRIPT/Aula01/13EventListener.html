@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>13 Event Listener</title>
+
+    <!-- JS -->
+    <script>
+
+        //Obriga carregar todos os elementos da página
+        window.onload = function(){
+
+        //Mensagem
+        function mensagem() {
+            window.alert("Você clicou no botão")
+        }
+
+        //Evento de click
+        document.getElementsByTagName("button")[0].addEventListener("click", mensagem);
+        
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <button>Clique aqui</button>
+
+
+</body>
+
+</html>

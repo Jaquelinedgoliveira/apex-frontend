@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>07 Evento de Teclado</title>
+
+        <!-- JS -->
+
+        <script>
+        function evento(){
+            //Obter o valor do campo
+            var campo = document.getElementById("campo").value;
+
+            //Mensagem
+            window.alert(campo);
+        }
+        </script>
+</head>
+<body>
+    <!-- 
+        UP: adiciona o caractere no campo e depois executa a função
+        Press: Executa a função e depois adiciona no campo(shift, ESC, Ctrl não funcionam)
+        Down: Executa a função e depois adiciona no campo(Qualquer tecla funciona)
+
+     -->
+
+    <!-- Campo -->
+    <input type="text" id="campo" placeholder="Digite algo..."onkeydown="evento()">
+    
+</body>
+</html>

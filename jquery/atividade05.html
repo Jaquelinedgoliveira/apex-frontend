@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <!-- Jquery -->
+    <script src="jquery-3.4.1.min.js"></script>
+    <!-- Script -->
+    <script>
+        //ao carregar
+        //movimentar para direita
+        $(document).ready(function () {
+            $("div").animate({
+                    "right": "0",
+                    "border-radius": "40px"
+                },2000);
+
+            //movimentar para baixo
+           
+                $("div").animate({
+                        "bottom": "0",
+                        "border-radius": "80px"
+                    }, 2000);
+
+                //movimentar para esquerda
+                     $("div").animate(
+                        {
+                            "left": "0",
+                            "border-radius": "120px"
+                             }, 2000);
+
+                     //movimentar para cima
+                     $("div").animate(
+                        {
+                            "top": "0",
+                             }, 2000);        
+
+
+                })
+
+    </script>
+
+    <!-- Css -->
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

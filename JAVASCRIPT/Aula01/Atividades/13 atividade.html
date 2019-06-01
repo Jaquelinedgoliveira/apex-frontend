@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade 13</title>
+
+    <link href="CSS/13 estilos.css" rel="stylesheet">
+    <script>
+       
+
+
+        function resultado(){
+         var numero = parseInt(document.getElementById("numero").value);
+         var sucessor= numero+1;
+         var antecessor=numero-1;
+        
+    
+         
+         document.getElementById("sucessor").value=sucessor;
+           document.getElementById("antecessor").value=antecessor;
+          
+            
+         
+        }
+       
+
+
+    </script>
+
+
+</head>
+
+<body>
+    <form>
+        <input type="text" id="numero" placeholder="numero">
+        <br>
+        <input type="button" value="resultado" onclick="resultado()">
+        <br>
+        <input type="text" id="sucessor" placeholder="sucessor">
+        <br>
+        <input type="text" id="antecessor" placeholder="antecessor">
+
+    </form>
+
+</body>
+
+</html>

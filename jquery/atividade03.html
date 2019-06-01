@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 03</title>
+
+    <!-- Jquery -->
+    <script src="jquery-3.4.1.min.js"></script>
+
+    <!-- Script -->
+    <script>
+
+        //ao carregar
+        $(document).ready(function () {
+
+            //botão ação
+            $("button").click(function () {
+
+                alert("Olá!!")
+            })
+
+            //Ação no select
+            $("select").change(function(){
+                var valor= parseInt($("select").val());
+                
+                switch(valor){
+                    case 1:
+                    location.assign("http://www.blumenau.sc.gov.br");
+                    break;
+
+                    case 2:
+                    location.assign("http://www.pmf.sc.gov.br");
+                    break;
+
+                    case 3:
+                    location.assign("http://www.balneariocamboriu.sc.gov.br");
+                    break;
+
+                }
+
+            })
+
+        })
+
+
+
+    </script>
+
+</head>
+
+<body>
+    <button>Clique aqui</button>
+
+    <select>
+        <option value="0">Selecione uma cidade</option>
+        <option value="1">Blumenau</option>
+        <option value="2">Florianópolis</option>
+        <option value="3">Balneário Camboriú</option>
+
+
+    </select>
+</body>
+
+</html>

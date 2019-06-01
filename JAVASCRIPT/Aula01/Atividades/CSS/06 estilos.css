@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+form{
+    width:350px;
+    text-align: center;
+    margin: 50px auto;
+    padding: 50px; 
+    /* /margin-left: 30%; */
+    border: solid 8px rgb(46, 13, 233);
+    background-color: rgb(185, 164, 218);
+}
+input[type="text"]{
+    width:  200px;
+    margin: 10px;
+    padding: 5px;
+    border: solid 2px rgb(46, 13, 233) ;
+       
+}
+input[type="button"]{
+    margin: 5px;
+    padding: 5px;
+    border: solid 2px rgb(46, 13, 233);
+    background-color: rgb(47, 36, 66);
+    color: white;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+body{
+    background-color: rgb(140, 107, 194);
+}

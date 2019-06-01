@@ -1,0 +1,39 @@
+form{
+    width:500px;
+    text-align: center;
+    margin: 200px auto;
+    padding: 50px; 
+    /* /margin-left: 30%; */
+    border: solid 6px rgb(201, 101, 8);
+    background-color: rgb(240, 220, 111);
+}
+h1{
+    color:rgb(58, 50, 3);
+}
+input[type="text"]{
+    width:  150px;
+    margin: 10px;
+    padding: 5px;
+    border: solid 2px rgb(201, 101, 8);
+    background-color: rgb(240, 220, 111);
+         
+}
+input[type="button"]{
+    width:  120px;
+    margin: 5px;
+    padding: 5px;
+    border: solid 2px rgb(201, 101, 8) ;
+    background-color:rgb(58, 50, 3);
+    color: white;
+}
+select{
+    width:  120px;
+    margin: 5px;
+    padding: 5px;
+    border: solid 2px rgb(201, 101, 8) ;
+    background-color:rgb(58, 50, 3);
+    color: white;
+}
+body{
+    background-color: rgb(241, 80, 6);
+}

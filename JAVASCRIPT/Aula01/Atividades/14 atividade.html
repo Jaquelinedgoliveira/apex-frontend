@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade 14</title>
+
+    <link href="CSS/14 estilos.css" rel="stylesheet">
+    <script>
+function calcular(){
+var veiculo= parseFloat(document.getElementById("veiculo").value);
+var veiculosemimp="";
+var percdistr="";
+var imposto="";
+var distribuidor="";
+
+if(veiculo<=12000){
+veiculosemimp="isento";
+percdistr=(veiculo*0.05);
+distribuidor="5%";
+imposto="isento";
+}else if(veiculo>12000 && veiculo<=25000){
+veiculosemimp=(veiculo-(veiculo*0.15));
+percdistr=(veiculo*0.10);
+distribuidor="10%";
+imposto=veiculo*0.15;
+}else if (veiculo>25000){
+    veiculosemimp=(veiculo-(veiculo*0.20));
+    percdistr=(veiculo*0.15);
+    distribuidor="15%";
+    imposto=veiculo*0.20;
+}
+
+
+
+document.getElementById("veiculo").value=veiculo;
+document.getElementById("veiculosemimp").value=veiculosemimp;
+document.getElementById("impdist").value=distribuidor;
+document.getElementById("impostos").value=imposto;
+document.getElementById("distribuidor").value=percdistr;
+
+
+
+
+
+}    
+    
+    </script>
+
+</head>
+<body>
+    <form> 
+        <label><h3>Valor do veículo</h3></label>
+       <input type="text"id="veiculo"placeholder="valor do veículo">
+        <input type="button" value="calcular"onclick="calcular()">
+        <input type="text" id="veiculosemimp"placeholder="Valor do veiculo sem imposto">
+        <br>
+        <input type="text" id="impdist" placeholder="Percentual distribuidor">
+       
+        <br>
+        <input type="text" id="impostos" placeholder=" % Impostos">
+        <br>
+        <input type="text" id="distribuidor" placeholder=" % Distribuidor ">
+
+    </form>
+
+</body>
+</html>

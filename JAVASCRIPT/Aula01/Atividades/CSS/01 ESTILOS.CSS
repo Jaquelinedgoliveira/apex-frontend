@@ -1,0 +1,31 @@
+/* Padronizar as tags */
+*{
+    font: 14px sans-serif;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+
+/* Formulario */
+form{
+    width: 400px;
+    margin: 50px auto;
+    border: solid 2px #000;
+    background-color: antiquewhite;
+}
+input[type="text"]{
+    width: 380px;
+    margin: 5px;
+    padding: 3px;
+    border: solid 1px #000;
+}
+ input[type="button"]{
+     margin: 5px;
+     padding: 3px;
+     border: solid 1px #000;
+     background-color: #888;
+ }
+body{
+    background-color: rgb(236, 111, 174);
+    background-size: 90%;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>15 Atividade</title>
+    <script>
+
+
+        function validar() {
+            var simples = document.getElementById("simples").value;
+            var duplo= document.getElementById("duplo").value;
+            var suite=document.getElementById("suite").value;
+            var dias = document.getElementById("dias").value;
+            var vdias = "";
+           
+
+            if (simples){
+                vdias = (dias * 45.00);
+            } else if (duplo) {
+                vdias = (dias * 65.00);
+            } else if (suite) {
+                vdias = (dias * 110.00)
+            }
+
+            document.getElementById("valor").value = vdias;
+        }
+
+
+
+
+
+
+
+    </script>
+
+
+
+</head>
+
+<body>
+    <form>
+        <select>
+            <option id="simples">1-apto simples</option>
+            <option id="duplo">2-apto duplo</option>
+            <option id="suite">3-suíte luxo</option>
+        </select>
+        <label>Dias de hospedagem </label>
+        <input type="text" id="dias" placeholder="Dias">
+        <br>
+        <input type="button" value="Validar" onclick="validar()">
+        <input type="text" id="valor" placeholder="Valor a pagar">
+        <br>
+    </form>
+</body>
+
+</html>

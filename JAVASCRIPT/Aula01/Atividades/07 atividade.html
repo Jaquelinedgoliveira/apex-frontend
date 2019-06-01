@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade 07</title>
+
+    <link href="CSS/07 estilos.css" rel="stylesheet">
+    <script>
+
+
+        function calcular() {
+            var numero = parseInt(document.getElementById("numero").value);
+            var resultado="";
+
+            for (var j = 0; j < 11; j++) {
+                resultado+= "\n"+(numero+ "x" +j + "=" +(numero * j));
+            }
+            window.alert(resultado)
+        }
+
+
+
+    </script>
+
+
+</head>
+
+<body>
+    <form>
+        <h3><u>TABUADA</u></h3>
+        <input type="text" id="numero" placeholder="informe um número">
+        <input type="button" value="calcular" onclick="calcular()">
+        <br>
+    </form>
+
+</body>
+
+</html>

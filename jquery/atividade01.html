@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 01</title>
+
+    <!-- Jquery -->
+    <script src="jquery-3.4.1.min.js"></script>
+
+    <!-- script -->
+    <script>
+    // $ seletor, altera qualquer coisa
+    //Ao carregar
+    $(document).ready(function(){
+        //Enviando texto
+        //document.getElementsByTagName("h1")[0].innerHTML= "olá";
+        $("h1").html("Olá");
+        $("h1:first-child").css("color","red");
+        $("h1:nth-child(2)").css({"color":"green","font-family":"arial"});
+        $("h1:nth-child(3)").css("text-decoration","underline");
+
+    })
+    
+    
+    </script>
+</head>
+<body>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    
+</body>
+</html>

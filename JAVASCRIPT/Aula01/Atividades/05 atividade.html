@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade 05</title>
+    <link href="css/05 estilos.css" rel="stylesheet">
+</head>
+<script>
+    function Calcular() {
+        var dia = document.getElementById("dia").value;
+        if (dia < 1 || dia > 28) {
+            window.alert("Data inválida")
+        } else {
+            if (dia == 2 || dia == 9 || dia == 16 || dia == 23 || dia == 3 || dia == 10 || dia == 17 || dia == 24) {
+                window.alert("Final de semana");
+            } else {
+                window.alert("Dia de semana");
+            }
+
+        }
+
+
+    }
+
+</script>
+
+
+
+<body>
+    <form>
+        <h3><u>CALENDÁRIO 2019-FEVEREIRO</u></h3>
+        <input type="text" id="dia" placeholder="dia">
+        <br>
+        <input type="button" value="calcular" onclick="Calcular()">
+    </form>
+
+</body>
+
+</html>

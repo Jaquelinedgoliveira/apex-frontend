@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>atividade 6</title>
+    <link href="CSS/06 estilos.css" rel="stylesheet">
+    <script>
+    function Calcular(){
+        var nota1= parseFloat(document.getElementById("valor1").value);
+        var nota2= parseFloat(document.getElementById("valor2").value);
+        var resultado=0
+
+        if(nota1==nota2){
+            resultado=(nota1+nota2);
+            window.alert("A soma dos valores é: "+resultado);
+
+        }else{
+            resultado=(nota1*nota2);
+            window.alert("o resultado da multiplicação é: "+resultado)
+
+        }
+    }
+
+    </script>
+</head>
+
+<body>
+    
+    <form>
+        <header>
+        <h1><b>REALIZANDO CÁLCULOS</b></h1>
+    </header>
+     <input type="text" id="valor1" placeholder="Digite o primeiro valor">
+     <input type="text" id="valor2" placeholder="Digite o segundo valor">
+     <br>
+     <input type="button" placeholder value="Calcular" onclick="Calcular()">
+       
+    </form>
+</body>
+
+</html>

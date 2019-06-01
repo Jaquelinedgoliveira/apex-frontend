@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 03</title>
+    <!-- CSS -->
+
+    <style>
+        input[type="text"] {
+            width: 300px;
+        }
+
+        table {
+
+            border: solid 1px #000;
+            margin-top: 30px;
+            width: 300px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ccc;
+        }
+
+        tr:first-child {
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+    <!-- JS -->
+    <script>
+
+        var vetor = [];
+
+        function cidades() {
+            //Obter dados do campo de texto
+            var campo = document.getElementsByTagName("input")[0].value;
+
+            //criar o vetor de cidades
+            vetor = campo.split(",");
+
+           
+            //cadastrar cidades
+            cadastrarCidades();
+
+        }
+
+
+
+
+
+        function removerCidade(elemento) {
+            //linha que será removida da tabela
+            var linha = elemento.getAttribute("value");
+
+            //remover do vetor
+            vetor.splice(linha, 1);
+
+            //atualizar a tabela
+            atualizarTabela();
+
+
+        }
+        function atualizarTabela() {
+
+            //Obter o elemento table
+            var tabela = document.getElementsByTagName("table")[0];
+
+            //quantidade de linhas
+            var qtdLinhas = tabela.getElementsByTagName("tr").length - 1;
+
+
+            //remover a linha
+            for (var indice = qtdLinhas; indice > 0; indice--) {
+                tabela.deleteRow(indice);
+            }
+            cadastrarCidades();
+
+        }
+
+
+        function cadastrarCidades() {
+
+            //obter tabela
+            var tabela = document.getElementsByTagName("table")[0];
+
+           //laço
+            for (var indice = 0; indice < vetor.length; indice++) {
+
+
+                //linha para atribuir o valor da tabela
+                var linha = tabela.insertRow(-1);
+
+                //célula da linha
+                var celula1 = linha.insertCell(0);
+                var celula2 = linha.insertCell(1);
+
+                //Atribuindo valores
+
+                celula1.innerHTML = vetor[indice];
+                celula2.innerHTML = "<button value='" + indice + "'onClick='removerCidade(this)'>Excluir</button>";
+
+
+            }
+        }
+
+    </script>
+
+
+
+
+</head>
+
+<body>
+
+    <!-- Formulário -->
+    <input type="text" placeholder="Informe o nome de cidades">
+    <button onclick="cidades()">Enviar</button>
+
+    <!-- Tabela -->
+    <table>
+        <tr>
+            <td>Cidade</td>
+            <td>Excluir</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

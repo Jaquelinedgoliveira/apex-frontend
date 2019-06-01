@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade 11</title>
+
+    <link href="css/11 estilos.css" rel="stylesheet">
+<script>
+    function calcular(){
+ var nota1= parseFloat(document.getElementsByTagName("input")[0].value);
+ var nota2= parseFloat(document.getElementsByTagName("input")[1].value);
+ var nota3= parseFloat(document.getElementsByTagName("input")[2].value);
+ var nota4= parseFloat(document.getElementsByTagName("input")[3].value);
+ var faltas= parseInt(document.getElementsByTagName("input")[4].value);
+
+var media= (nota1+nota2+nota3+nota4)/4;
+var situacao= "";
+
+            if(faltas>=15){
+                situacao="reprovado";
+            }else if(media>=9 && media<=9.9){
+                situacao="Ótimo";
+            }else if(media>=7 && media==8.9){
+                situacao="Bom";
+            }else if(media<7 && media>=5.1){
+                situacao="Em exame";
+            }else if(media<=5 && media==1){
+                situacao="reprovado";
+            }else if(media==10){
+                situacao="Parabéns";
+           
+            }
+            document.getElementById("media").value= media;
+            document.getElementById("situacao").value=situacao;
+
+    }
+
+
+
+</script>
+
+</head>
+<body>
+   <form>
+       <h3>AVALIAÇÃO DO ALUNO</h3>
+       <label>Informe a primeira nota</label>
+        <input type="text">
+        <br>
+        <label>Informe a segunda nota</label>
+        <input type="text">
+        <br>
+        <label>Informe a terceira nota</label>
+        <input type="text">
+        <br>
+        <label>Informe a quarta nota</label>
+        <input type="text">
+        <br>
+        <label>Informe a quantidade de faltas</label>
+        <input type="text">
+        <br>
+        <input type="button" value="calcular" onclick="calcular()">
+        <br>
+        <input type="text" id="media" placeholder="media">
+        <br>
+        <input type="text" id="situacao" placeholder="situação">
+           
+         
+
+
+        <br>
+   </form> 
+</body>
+</html>

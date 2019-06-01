@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>Atividade 04</title>
+
+        <!-- Jquery -->
+    <script src="jquery-3.4.1.min.js"></script>
+    <!-- Script -->
+    <script>
+        //ao carregar
+        $(document).ready(function(){
+            //Hide
+            $("button:nth-child(1)").click(function(){
+                $("div").hide();
+            })
+
+            //show
+            $("button:nth-child(2)").click(function(){
+                $("div").show();
+            })
+
+            //FadeIn
+            $("button:nth-child(3)").click(function(){
+                $("div").fadeIn(1500);
+            })
+
+             //FadeOut
+             $("button:nth-child(4)").click(function(){
+                $("div").fadeOut(3000);
+            })
+             //slideUp
+             $("button:nth-child(5)").click(function(){
+                $("div").slideUp();
+            })
+             //slideDown
+             $("button:nth-child(6)").click(function(){
+                $("div").slideDown();
+            })
+
+            //slideToggle
+            $("button:nth-child(7)").click(function(){
+                $("div").slideToggle();
+            })
+
+
+
+
+        })
+    
+    </script>
+
+    <!-- Css -->
+    <style>
+    div{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+    }
+    </style>
+
+</head>
+<body>
+    <button>Hide</button>
+    <button>Show</button>
+    <button>FadeIn</button>
+    <button>FadeOut</button>
+    <button>SlideUp</button>
+    <button>SlideDown</button>
+    <button>SlideToggle</button>
+
+    
+
+<div></div>
+
+</body>
+</html>

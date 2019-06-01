@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>07 Exercícios</title>
+
+    <script>
+    //obter o valor
+    var palavra = prompt("Informe uma palavra");
+
+    //Obter as duas últimas letras
+    var ultimasLetras = palavra.substr(palavra.length-2);
+    alert(ultimasLetras);
+
+    //Obter as duas últimas letras
+    var inicioPalavra = palavra.substr(0, palavra.length-2);
+    
+//validar palavra
+if(ultimasLetras!="ar"){
+    alert("Palavra Incorreta!")
+}else{
+    document.write("Eu "+inicioPalavra+"o<br>")
+    document.write("Tu "+inicioPalavra+"as<br>")
+    document.write("Ele "+inicioPalavra+"a<br>")
+    document.write("Nós "+inicioPalavra+"amos<br>")
+    document.write("Vós "+inicioPalavra+"ais<br>")
+    document.write("Eles "+inicioPalavra+"am<br>")
+}
+   
+            
+    
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

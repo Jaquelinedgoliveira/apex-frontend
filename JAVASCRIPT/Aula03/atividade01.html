@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+       <title>Atividade 01</title>
+</head>
+<body>
+<!-- JavaScript -->
+    <script>
+        //Array(vetor)
+        var nomes = ["Luana","Márcio","Renata","Sérgio"];
+
+        //Exibir nomes
+        //alert(nomes);
+        //console.log(nomes);
+        document.write("<h1>Laço For</h1>");
+
+        for(var indice=0;indice< nomes.length; indice++){
+            document.write(nomes[indice]+"<hr>");
+         
+        }
+
+
+        document.write("<h1>Laço ForEach</h1>");
+        nomes.forEach(exibirNomes);
+
+        function exibirNomes(n){
+            document.write(n+ "<hr>");
+
+        }
+
+        
+       
+    
+    </script>
+    
+</body>
+</html>

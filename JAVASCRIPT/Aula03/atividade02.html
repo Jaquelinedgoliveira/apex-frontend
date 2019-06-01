@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <title>Atividade 02</title>
+</head>
+<body>
+    <!-- JavaScript -->
+    <script>
+    //vetor
+    var cores = ["Azul", "Roxo", "Verde"];
+
+    //Adicionar uma cor no final do array
+    cores.push("Rosa");
+
+    //Remover a última cor do array
+    cores.pop();
+
+    //Adionar uma cor no início do array
+    cores.unshift("Cinza");
+
+    //remover a primeira cor do array
+    cores.shift();
+
+    //revovendo cores em determinada posição
+    cores.splice(1,1);
+
+    //alterar cor
+    cores[1] = "Vermelho";
+
+    //Exibir cores
+    for(var indice=0; indice<cores.length; indice++){
+        document.write(cores[indice]+"<hr>");
+    }
+    
+    </script>
+    
+</body>
+</html>

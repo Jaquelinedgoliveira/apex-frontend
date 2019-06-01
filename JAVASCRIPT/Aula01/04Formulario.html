@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04 Formulário</title>
+
+<!-- css -->
+<style>
+*{
+    outline: none;
+}
+
+input[type="text"]{
+    border: solid 1px black;
+}
+</style>
+
+<!-- JS -->
+
+<script>
+//validar o formulário
+function valida(){
+
+//Obter o valor do campo
+var campo = document.getElementById("campo");
+
+//validar se o campo está vazio
+if(campo.value == ""){
+campo.style.border = "solid 1px red";
+return false;
+}
+}
+
+//Reset de borda
+function campoSemEstilo(){
+    document.getElementById("campo").style.borderColor = "black";
+}
+</script>
+
+</head>
+<body>
+    <form action="http://www.google.com" onsubmit="return valida()">
+        <input type="text" id="campo"onkeyup="campoSemEstilo()">
+        <input type="submit">
+    </form>
+    
+</body>
+</html>

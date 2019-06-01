@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>09 Condicional composta</title>
+
+    <!-- JS -->
+    <script>
+        //função de média
+        function Calcular() {
+            //Variáveis
+            var nota1 = parseFloat(document.getElementsByTagName("input")[0].value);
+            var nota2 = parseFloat(document.getElementsByTagName("input")[1].value);
+            //Média
+            var media = (nota1 + nota2) / 2;
+
+            //situação do aluno
+            if ((media < 0) || (media > 10)) {
+                window.alert("Media inválida");
+            } else if (media >= 7) {
+                window.alert("Aprovado(a)");
+            }else if(media>=5){
+                window.alert("Em exame");
+            }else{
+                window.alert("Reprovado(a)")
+            }
+
+            //Operadores lógicos
+            //&& -  E
+            //||  - OU
+            //!  - Não
+
+            //Operadores Relacionais
+            //>  -MAIOR
+            //>=  -MAIOR OU IGUAL
+            //<   -MENOR
+            //<=  -MENOR OU IGUAL
+            //==  -IGUAL
+            // !=  -DIFERENTE
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <form>
+        <input type="number" placeholder="Primeira nota">
+        <input type="number" placeholder="Segunda nota">
+        <input type="button" value="Calcular" onclick="Calcular()">
+    </form>
+
+</body>
+
+</html>

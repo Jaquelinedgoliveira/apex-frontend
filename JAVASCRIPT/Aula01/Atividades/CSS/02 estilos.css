@@ -1,0 +1,33 @@
+form{
+    width: 400px;
+    margin: 50px auto;
+    /* /margin-left: 30%; */
+    border: solid 4px rgb(63, 8, 42);
+    background-color: rgb(196, 43, 137);
+}
+input[type="button"]{
+    margin: 5px;
+    padding: 5px;
+    border: solid 2px rgb(63, 8, 42);
+    background-color: #888;
+}
+input[type="text"]{
+    width: 380px;
+    margin: 5px;
+    padding: 3px;
+    border: solid 2px rgb(63, 8, 42) ;
+    background-color: rgb(189, 184, 184);    
+}
+header{
+    font: 10px arial;
+    color: rgb(196, 43, 137);
+   }
+h1{
+    text-align: center;
+}
+body{
+    background-image: url(../imagem/cidade01.jpg);
+    background-size: 100%;
+      
+}
+    

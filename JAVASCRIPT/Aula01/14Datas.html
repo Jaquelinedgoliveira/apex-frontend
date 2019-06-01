@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Datas</title>
+
+<!-- JS -->
+<script>
+
+//Ao carregar a página executa a ação
+window.onload = function(){
+
+  //Variável para manipular datas
+  var data = new Date();
+
+  //Exibir data no h1
+  document.getElementsByTagName("h1")[0].innerText = data.getDate()+"/"+(data.getMonth()+1)+"/"+data.getFullYear();
+
+  //Exibir hora no h1
+  document.getElementsByTagName("h1")[1].innerText = data.getHours()+":"+data.getMinutes()+":"+data.getSeconds();
+}
+</script>
+</head>
+<body>
+
+    <h1></h1>
+    <h1></h1>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade 10</title>
+
+    <link href="css/10 estilos.css" rel="stylesheet">
+    <script>
+        function calcular() {
+            var qnt1 = parseFloat(document.getElementsByTagName("input")[0].value*0.01);
+            var qnt2 = parseFloat(document.getElementsByTagName("input")[1].value*0.05);
+            var qnt3 = parseFloat(document.getElementsByTagName("input")[2].value*0.10);
+            var qnt4 = parseFloat(document.getElementsByTagName("input")[3].value*0.25);
+            var qnt5 = parseFloat(document.getElementsByTagName("input")[4].value*0.50);
+            var qnt6 = parseFloat(document.getElementsByTagName("input")[5].value*1.00);
+                   
+            var total=qnt1+qnt2+qnt3+qnt4+qnt5+qnt6;      
+          
+            document.getElementById("campo7").value=total.toFixed(2);
+            
+        }
+    </script>
+
+</head>
+
+<body>
+    <form>
+        <h2>CALCULANDO MOEDAS</h2>
+        <label>Informe a quantidade de R$0,01 </label>
+        <input type="text" id= "campo1"placeholder="Quantidade">
+        <br>
+        <label>Informe a quantidade de R$0,05 </label>
+        <input type="text" id="campo2" placeholder="Quantidade">
+        <br>
+        <label>Informe a quantidade de R$0,10 </label>
+        <input type="text" id="campo3" placeholder="Quantidade">
+        <br>
+        <label>Informe a quantidade de R$0,25 </label>
+        <input type="text" id="campo4" placeholder="Quantidade">
+        <br>
+        <label>Informe a quantidade de R$0,50 </label>
+        <input type="text" id="campo5" placeholder="Quantidade">
+        <br>
+        <label>Informe a quantidade de R$1,00 </label>
+        <input type="text" id="campo6" placeholder="Quantidade">
+        <br>
+        <input type="button" value="Calcular" onclick="calcular()">
+        <input type="text" id="campo7";
+        
+
+
+    </form>
+
+</body>
+
+</html>

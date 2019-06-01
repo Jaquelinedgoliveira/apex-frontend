@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade 04</title>
+    <link href="css/04 estilos.css" rel="stylesheet">
+    <script>
+        function Calcular() {
+            var prazo = document.getElementsByName("pgto")[0].checked;
+            var valor= document.getElementsByName("valor")[0].value;
+            var formaPgto = "A vista";
+
+            if (prazo == true) {
+                formaPgto = "A prazo";
+            }
+            if ((valor > 500) && (formaPgto == "A vista")) {
+                window.alert("Desconto de 10%, o total será de" +(valor * 0.9));
+            }else{
+                window.alert("Sem desconto, o total será de"+valor);
+            }
+
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <form>
+        <input type="text" placeholder="Produto">
+        <input type="text" placeholder="Valor" name="valor">
+        <!-- <input type= "text" placeholder="Condição de pagamento"> -->
+        <input type="radio">
+        <label>A vista</label>
+        <input type="radio" name="pgto">
+        <label>A prazo</label>
+        <input type="button" value="enviar" onclick="Calcular()">
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade 12</title>
+
+    <link href="CSS/12 estilos.css" rel="stylesheet">
+    <script>
+    function calcular(){
+    var maxima= parseInt(document.getElementsByTagName("input")[0].value);
+    var veiculo= parseInt(document.getElementsByTagName("input")[1].value); 
+    var resultado="";  
+
+    
+    if(veiculo>maxima+30){
+        resultado= "multa R$200,00";
+    }else if(veiculo>maxima+11 || veiculo==maxima+30){
+        resultado="multa R$100,00";
+    }else if(veiculo>=maxima+10){
+         resultado="multa de R$50,00";
+    }else{
+        resultado=" Bom motorista";
+    }
+
+document.getElementById("resultado").value=resultado;
+   
+      
+   
+    }
+
+    </script>
+
+
+</head>
+
+<body>
+    <form>
+    <h1>CÁLCULO DE MULTA</h1>
+    <label>Informe a velocidade máxima permitida</label>
+    <input type="text">
+    <label>Informe velocidade do veículo</label>
+    <input type="text">
+    <input type="button" value="Calcular" onclick="calcular()">
+    <input type="text"id="resultado"placeholder="resultado">
+</form>
+</body>
+
+</html>

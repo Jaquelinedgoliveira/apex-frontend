@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+        <title>05 - Textos</title>
+
+        <!-- Script -->
+        <script>
+        //Armazenar uma palavra
+
+        var palavra = prompt("Informe uma palavra");
+
+        //Contar caracteres
+        var contarCaracteres = palavra.length;
+
+        //Exibir dados
+        document.write("O usuário informou: "+palavra+"<br>");
+        document.write("Quantidade de caracteres: "+contarCaracteres+"<br>");
+        document.write("Palavra em letras maiúsculas: "+palavra.toUpperCase()+"<br>");
+        document.write("Palavra em letras minúsculas: "+palavra.toLowerCase()+"<br>");
+        document.write("Remover espaços no início e no fim do texto: "+palavra.trim());
+        document.write("Exibindo o primeiro caractere: "+palavra.charAt(0)+"<hr>");
+
+        for(var indice=0;indice<palavra.length; indice++){
+            document.write((indice+1)+" letra informada e "+palavra.charAt(indice)+ "<br>");
+        }
+        document.write("<hr>");
+
+        document.write("Alterar a primeira letra A encontrada "+palavra.replace("a","o")+ "<br>");
+
+        document.write("Alterar todas as letras A"+palavra.replace(/a/g, "o")+ "<br>");
+        document.write("Exibindo a palavra a partir do segundo caractere " +palavra.substr(1)+"<br>");
+        document.write("Exibindo do primeiro ao terceiro caractere " +palavra.substr(0,3)+"<br>");
+
+
+
+        </script>
+</head>
+<body>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade 01</title>
+
+    <link href="css/01 ESTILOS.CSS" rel="stylesheet">
+    <script>
+    function evento(){
+        var Nome = document.getElementById("Nome").value;
+        var Idade = document.getElementById("Idade").value;
+        var Cidade = document.getElementById("Cidade").value;
+        window.alert("Nome: "+Nome+"\nIdade: "+Idade+"\nCidade: "+Cidade);
+
+    }
+  
+    
+    
+    </script>
+
+
+
+</head>
+
+<body>
+    <form>
+        <input type="text" id="Nome" placeholder="Nome">
+        <input type="text" id="Idade" placeholder="Idade">
+        <input type="text" id="Cidade" placeholder="Cidade">
+        <input type="button" value="enviar" onclick="evento()">
+
+    </form>
+    
+</body>
+
+</html>
